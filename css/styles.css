@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    display: block;
+    cursor: pointer;
+}
+
+:root {
+    --primary-text-color:#424551;
+    --primary-title-color:#1E212C;
+    --buttons-bg-color:#FF3F3A;
+    --buttons-hover-color : #ffffff;
+}
+
+.container {
+    width: 1260px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ 
+
+.btn-white {
+    border: 1px solid var(--buttons-bg-color);
+    color: var(--buttons-bg-color);
+    border-radius: 4px;
+    padding: 12px 35px;
+}
+
+
+/* -------------ШАПКА------------ */
+
+
+   
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+
+.header-logo {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Lato' ,sans-serif;
+
+    margin-right: 60px;
+}
+
+.logo-span {
+    color: #FF3F3A;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: var(--primary-text-color);
+    font-family: 'Lato',sans-serif; 
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.6;
+}
+
+.btn-orange {
+    background-color: var(--buttons-bg-color);
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid var(--buttons-bg-color);
+    border-radius: 4px;
+
+    padding: 12px 35px;
+    
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    background-color: #ffffff;
+    color: var(--buttons-bg-color);
+    border: 1px solid var(--buttons-bg-color);
+}
+
+.login-link {
+    color: var(--primary-text-color);
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.6;
+}
+
+/* ----------------ГЕРОЙ---------------- */
+
+.section-hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    color: var(--primary-title-color);
+    font-family: 'Lato', sans-serif;
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+}
+
+.hero-title {
+    color: var(--primary-title-color);
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.3;
+
+        width: 496px;
+
+        margin-top: 40px;
+        margin-bottom: 60px;
+}
+
+.hero-btn-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-hero-list {
+    display: flex;
+    margin-top: 260px;
+}
