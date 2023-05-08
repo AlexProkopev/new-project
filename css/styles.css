@@ -63,10 +63,17 @@ img {
  
 
 .btn-white {
+    background-color: var(--buttons-hover-color);
     border: 1px solid var(--buttons-bg-color);
     color: var(--buttons-bg-color);
     border-radius: 4px;
     padding: 12px 35px;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: var(--buttons-bg-color);
+    color: var(--buttons-hover-color);
 }
 
 
@@ -152,6 +159,8 @@ img {
 /* ----------------ГЕРОЙ---------------- */
 
 .section-hero {
+    background-image: url(/images/hiro/bg-color.svg) ;
+
     padding-top: 140px;
     padding-bottom: 80px;
 }
@@ -162,12 +171,22 @@ img {
 }
 
 .hero-text {
+    display: flex;
+    align-items: center;
     color: var(--primary-title-color);
     font-family: 'Lato', sans-serif;
         
         font-weight: 700;
         font-size: 14px;
         line-height: 1.5;
+}
+
+.hero-text::before {
+    display: inline-block;
+    content: '';
+    width: 84px;
+    height: 84px;
+    background-image: url(/images/hiro/play.svg);
 }
 
 .hero-title {
@@ -193,4 +212,215 @@ img {
 .footer-hero-list {
     display: flex;
     margin-top: 260px;
+    justify-content: space-between;
+    
 }
+
+.footer-hero-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.footer-hero-title {
+    font-family: 'Lato', sans-serif;
+        
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+}
+
+.footer-hero-text {
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+}
+
+
+/* ----------------------SECION FIRST-------------------- */
+
+.section-features {
+    
+
+    padding-bottom: 180px;
+    padding-top: 180px;
+}
+
+.features-container {
+    display: flex;
+    gap: 130px;
+    
+}
+
+
+
+.features-text-upper {
+    color: var(--primary-title-color);
+    font-family: 'Lato',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+}
+
+.features-title {
+    color: var(--primary-title-color);
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        margin-bottom: 40px;
+}
+
+.features-list li {
+    display: flex;
+    margin-bottom: 12px;
+
+}
+
+.features-list li::before {
+    display: inline-block;
+    
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url(/images/hiro/vector.svg);
+        background-position: bottom;
+        margin-right: 16px;
+        margin-top: 5px;
+}
+.features-list li:last-child {
+    margin-bottom: 0;
+}
+
+.btn-margin {
+    margin-top: 48px;
+}
+
+
+.features-text {
+    color: var(--primary-text-color);
+    font-family: 'Lato' ,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        width: 358px;
+        
+        
+        
+}
+
+
+/* TEAM */
+
+.section-team {
+    padding-bottom: 180px;
+}
+
+.team-text-head {
+    color: var(--primary-title-color);
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+}
+
+.team-title-head {
+
+    color: var(--primary-title-color);
+    font-family: 'Lato';
+        
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        margin-bottom: 60px;
+}
+
+.team-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.team-btn-container {
+    
+    
+    
+}
+
+.card-team {
+    display: flex;
+    width: 600px;
+    border: 1px solid #E5E8ED;
+    
+    
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+
+        
+}
+
+.card-team:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+.card-team-text {
+    padding: 32px;
+}
+
+
+.card-btn {
+    display: inline-block;
+    background-color: #03CEA4;
+    border-radius: 4px;
+    padding: 1px 8px;
+    margin-bottom: 20px;
+    color: var(--buttons-hover-color);
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+}
+
+.card-title {
+    color: var(--primary-title-color);
+    font-family: 'Lato',sans-serif;
+        width: 322px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+}
+
+.card-text {
+    color: #787A80;
+    font-family: 'Lato',sans-serif;
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+}
+
+.card-span {
+    color: #FF4242;
+    
+    
+    font-weight: 700;
+        
+}
+
+
+
+
+
